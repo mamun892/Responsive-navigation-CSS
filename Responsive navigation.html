@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .menu {
+            background-color: aqua;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+        .menu a {
+            text-decoration: none;
+            padding: 20px;
+            color: rgb(0, 0, 0);
+            font-size: 1.2rem;
+            
+        }
+        .menu a:hover {
+            background-color: green;
+        }
+        /* Corrected media query */
+        @media screen and (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+            }
+            .menu a{
+                background-color: indianred;
+                margin: 5px 0px;
+                text-align: center;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+        <a href="#">About Me</a>
+        <a href="#">Contact Me</a>
+    </div>
+</body>
+</html>
